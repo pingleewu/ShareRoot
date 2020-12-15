@@ -1,3 +1,0 @@
-[console_scripts]
-ets3to4 = enthought.ets3to4:main
-

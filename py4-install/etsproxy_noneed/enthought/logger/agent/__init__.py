@@ -1,3 +1,0 @@
-"""
-lib.enthought.logger.agent
-"""
