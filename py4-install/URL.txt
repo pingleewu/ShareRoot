@@ -1,0 +1,14 @@
+
+enable and etsproxy from github:
+https://github.com/enthought/enable
+(etsproxy can be removed after ets3to4 conversion on pytimechart)
+
+https://docs.enthought.com/traits/traits_user_manual/intro.html
+https://docs.enthought.com/traits/traits_api_reference/traits.html
+
+chaco, pyface, traits, traitsui are from pip3 download
+(Versions updated recently from github break builds to run pytimechart. SO only use pip3 source)
+
+1.0.0.RC1 pytimechart from this github:
+https://github.com/tardyp/pytimechart.git
+(pip3 version is 0.9.3)

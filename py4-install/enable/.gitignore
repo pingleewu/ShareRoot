@@ -1,0 +1,36 @@
+# File types to ignore
+*.pyc
+*.pyd
+*.so
+*.enamlc
+*~
+.DS_Store
+
+# Ignore the build directories
+*.egg-info/
+build/
+dist/
+docs/build/
+
+# SWIG & Cython intermediate files
+kiva/agg/agg.py
+kiva/agg/agg_wrap.cpp
+kiva/agg/plat_support.py
+kiva/agg/src/gl/plat_support_wrap.cpp
+kiva/agg/src/gtk1/plat_support_wrap.cpp
+kiva/agg/src/win32/plat_support_wrap.cpp
+kiva/agg/src/x11/plat_support_wrap.cpp
+kiva/quartz/ABCGI.c
+kiva/quartz/CTFont.c
+
+# Auto-generated version info
+enable/_version.py
+kiva/_version.py
+
+# Unclean test crud.
+arc.png
+arc_to.png
+dash.bmp
+sun.test_*.bmp
+text_image.test_*.bmp
+.hypothesis/

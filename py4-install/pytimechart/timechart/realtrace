@@ -1,0 +1,302 @@
+ pytimechart-rec-8130  [002] d... 20271.178456: sched_wakeup: comm=kworker/u8:3 pid=7304 prio=120 target_cpu=003
+          <idle>-0     [003] dN.. 20271.178475: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] d... 20271.178481: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kworker/u8:3 next_pid=7304 next_prio=120
+    kworker/u8:3-7304  [003] d... 20271.178495: sched_wakeup: comm=gnome-terminal- pid=1771 prio=120 target_cpu=000
+    kworker/u8:3-7304  [003] .... 20271.178497: workqueue_execute_end: work struct 000000005d8c0cfe
+    kworker/u8:3-7304  [003] d... 20271.178502: sched_switch: prev_comm=kworker/u8:3 prev_pid=7304 prev_prio=120 prev_state=I ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.178506: cpu_idle: state=5 cpu_id=3
+          <idle>-0     [000] dN.. 20271.178515: cpu_idle: state=4294967295 cpu_id=0
+          <idle>-0     [000] dN.. 20271.178519: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271293059143 softexpires=20271293059143 mode=0xa
+          <idle>-0     [000] d... 20271.178524: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gnome-terminal- next_pid=1771 next_prio=120
+ pytimechart-rec-8130  [002] dN.. 20271.178611: sched_wakeup: comm=bash pid=8097 prio=120 target_cpu=001
+ gnome-terminal--1771  [000] d... 20271.178613: hrtimer_start: hrtimer=00000000b54fa38f function=hrtimer_wakeup expires=20271299937913 softexpires=20271299887913 mode=ABS
+ pytimechart-rec-8130  [002] d... 20271.178617: sched_switch: prev_comm=pytimechart-rec prev_pid=8130 prev_prio=120 prev_state=Z ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ gnome-terminal--1771  [000] d... 20271.178621: sched_switch: prev_comm=gnome-terminal- prev_pid=1771 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.178624: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [000] d... 20271.178627: cpu_idle: state=5 cpu_id=0
+          <idle>-0     [001] dN.. 20271.178631: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [001] d... 20271.178637: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=bash next_pid=8097 next_prio=120
+            bash-8097  [001] d... 20271.179774: sched_wakeup: comm=kworker/u8:3 pid=7304 prio=120 target_cpu=003
+            bash-8097  [001] d... 20271.179791: sched_switch: prev_comm=bash prev_pid=8097 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0     [003] dN.. 20271.179794: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [001] d... 20271.179796: cpu_idle: state=5 cpu_id=1
+          <idle>-0     [003] d... 20271.179800: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kworker/u8:3 next_pid=7304 next_prio=120
+    kworker/u8:3-7304  [003] d... 20271.179812: sched_wakeup: comm=gnome-terminal- pid=1771 prio=120 target_cpu=000
+    kworker/u8:3-7304  [003] .... 20271.179814: workqueue_execute_end: work struct 000000005d8c0cfe
+    kworker/u8:3-7304  [003] d... 20271.179818: sched_switch: prev_comm=kworker/u8:3 prev_pid=7304 prev_prio=120 prev_state=I ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.179823: cpu_idle: state=5 cpu_id=3
+          <idle>-0     [000] dN.. 20271.179854: cpu_idle: state=4294967295 cpu_id=0
+          <idle>-0     [000] d... 20271.179861: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gnome-terminal- next_pid=1771 next_prio=120
+ gnome-terminal--1771  [000] d... 20271.179952: hrtimer_start: hrtimer=00000000b54fa38f function=hrtimer_wakeup expires=20271300276616 softexpires=20271300226616 mode=ABS
+ gnome-terminal--1771  [000] d... 20271.179958: cpu_frequency: state=1000000 cpu_id=0
+ gnome-terminal--1771  [000] d... 20271.179960: pstate_sample: core_busy=36 scaled=2 from=12 to=10 mperf=4142849 aperf=1518093 tsc=150581088 freq=1279538 io_boost=0
+ gnome-terminal--1771  [000] d... 20271.179963: sched_switch: prev_comm=gnome-terminal- prev_pid=1771 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+          <idle>-0     [000] d... 20271.179981: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271657059143 softexpires=20271657059143 mode=0xa
+          <idle>-0     [000] d... 20271.179982: cpu_idle: state=5 cpu_id=0
+          <idle>-0     [003] d... 20271.181801: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [001] d... 20271.181813: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [002] d... 20271.181814: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [003] d.h. 20271.181818: hrtimer_expire_entry: hrtimer=00000000bafe098a function=tick_sched_timer now=20271293101574
+          <idle>-0     [001] d.h. 20271.181819: hrtimer_expire_entry: hrtimer=00000000197f79c3 function=tick_sched_timer now=20271293102273
+          <idle>-0     [002] d.h. 20271.181819: hrtimer_expire_entry: hrtimer=00000000c46d25ae function=tick_sched_timer now=20271293102289
+          <idle>-0     [001] d.h. 20271.181820: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [001] d.h. 20271.181821: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [003] d.h. 20271.181821: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.181822: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [003] d.h. 20271.181822: hrtimer_expire_exit: hrtimer=00000000bafe098a
+          <idle>-0     [002] d.h. 20271.181823: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [003] d.h. 20271.181823: hrtimer_start: hrtimer=00000000bafe098a function=tick_sched_timer expires=20271297059143 softexpires=20271297059143 mode=ABS
+          <idle>-0     [001] d.h. 20271.181823: hrtimer_expire_exit: hrtimer=00000000197f79c3
+          <idle>-0     [001] d.h. 20271.181824: hrtimer_start: hrtimer=00000000197f79c3 function=tick_sched_timer expires=20271297059143 softexpires=20271297059143 mode=ABS
+          <idle>-0     [002] d.h. 20271.181824: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.181825: hrtimer_expire_exit: hrtimer=00000000c46d25ae
+          <idle>-0     [003] ..s. 20271.181826: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.181826: hrtimer_start: hrtimer=00000000c46d25ae function=tick_sched_timer expires=20271297059143 softexpires=20271297059143 mode=ABS
+          <idle>-0     [001] ..s. 20271.181827: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [001] ..s. 20271.181828: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [001] ..s. 20271.181828: softirq_entry: vec=9 [action=RCU]
+          <idle>-0     [002] ..s. 20271.181828: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [002] ..s. 20271.181829: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [001] ..s. 20271.181829: softirq_exit: vec=9 [action=RCU]
+          <idle>-0     [002] ..s. 20271.181830: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [001] d... 20271.181835: cpu_idle: state=5 cpu_id=1
+          <idle>-0     [003] ..s. 20271.181835: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [002] ..s. 20271.181838: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [002] ..s. 20271.181839: softirq_entry: vec=9 [action=RCU]
+          <idle>-0     [002] ..s. 20271.181840: softirq_exit: vec=9 [action=RCU]
+          <idle>-0     [003] d... 20271.181842: cpu_idle: state=5 cpu_id=3
+          <idle>-0     [002] d... 20271.181845: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [001] d... 20271.185801: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [002] d... 20271.185801: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [003] d... 20271.185801: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [001] d.h. 20271.185817: hrtimer_expire_entry: hrtimer=00000000197f79c3 function=tick_sched_timer now=20271297100767
+          <idle>-0     [002] d.h. 20271.185818: hrtimer_expire_entry: hrtimer=00000000c46d25ae function=tick_sched_timer now=20271297100987
+          <idle>-0     [003] d.h. 20271.185818: hrtimer_expire_entry: hrtimer=00000000bafe098a function=tick_sched_timer now=20271297101186
+          <idle>-0     [003] d.h. 20271.185819: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [001] d.h. 20271.185820: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.185821: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [001] d.h. 20271.185821: hrtimer_expire_exit: hrtimer=00000000197f79c3
+          <idle>-0     [003] d.h. 20271.185822: hrtimer_expire_exit: hrtimer=00000000bafe098a
+          <idle>-0     [001] d.h. 20271.185822: hrtimer_start: hrtimer=00000000197f79c3 function=tick_sched_timer expires=20271301059143 softexpires=20271301059143 mode=ABS
+          <idle>-0     [003] d.h. 20271.185822: hrtimer_start: hrtimer=00000000bafe098a function=tick_sched_timer expires=20271301059143 softexpires=20271301059143 mode=ABS
+          <idle>-0     [002] d.h. 20271.185823: hrtimer_expire_exit: hrtimer=00000000c46d25ae
+          <idle>-0     [002] d.h. 20271.185824: hrtimer_start: hrtimer=00000000c46d25ae function=tick_sched_timer expires=20271301059143 softexpires=20271301059143 mode=ABS
+          <idle>-0     [001] ..s. 20271.185825: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [003] ..s. 20271.185825: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [003] ..s. 20271.185826: timer_expire_entry: timer=000000008bab86c3 function=process_timeout now=4299960094 baseclk=4299960093
+          <idle>-0     [002] ..s. 20271.185826: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [002] ..s. 20271.185827: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [003] d.s. 20271.185832: cpu_frequency: state=900000 cpu_id=3
+          <idle>-0     [002] d... 20271.185832: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [003] d.s. 20271.185832: pstate_sample: core_busy=33 scaled=2 from=9 to=9 mperf=1066353 aperf=354117 tsc=41925251 freq=1159535 io_boost=0
+          <idle>-0     [001] ..s. 20271.185833: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [003] dNs. 20271.185835: sched_wakeup: comm=rcu_sched pid=11 prio=120 target_cpu=003
+          <idle>-0     [003] .Ns. 20271.185835: timer_expire_exit: timer=000000008bab86c3
+          <idle>-0     [003] .Ns. 20271.185836: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [001] d... 20271.185839: cpu_idle: state=5 cpu_id=1
+          <idle>-0     [003] d... 20271.185841: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=rcu_sched next_pid=11 next_prio=120
+       rcu_sched-11    [003] .... 20271.185846: timer_init: timer=000000008bab86c3
+       rcu_sched-11    [003] d... 20271.185847: timer_start: timer=000000008bab86c3 function=process_timeout expires=4299960095 [timeout=1] cpu=3 idx=32 flags=
+       rcu_sched-11    [003] d... 20271.185852: sched_switch: prev_comm=rcu_sched prev_pid=11 prev_prio=120 prev_state=I ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.185857: cpu_idle: state=5 cpu_id=3
+          <idle>-0     [003] d... 20271.187200: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] d.h. 20271.187217: hrtimer_expire_entry: hrtimer=00000000a46154be function=hrtimer_wakeup now=20271298500335
+          <idle>-0     [003] dNh. 20271.187226: sched_wakeup: comm=python3 pid=5565 prio=120 target_cpu=003
+          <idle>-0     [003] dNh. 20271.187227: hrtimer_expire_exit: hrtimer=00000000a46154be
+          <idle>-0     [003] d... 20271.187233: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=python3 next_pid=5565 next_prio=120
+          <idle>-0     [001] d... 20271.187302: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [001] d.h. 20271.187308: hrtimer_expire_entry: hrtimer=0000000064b2ef01 function=hrtimer_wakeup now=1606468934112556955
+          <idle>-0     [001] dNh. 20271.187318: sched_wakeup: comm=python3 pid=5578 prio=120 target_cpu=001
+          <idle>-0     [001] dNh. 20271.187319: hrtimer_expire_exit: hrtimer=0000000064b2ef01
+          <idle>-0     [001] d... 20271.187325: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=python3 next_pid=5578 next_prio=120
+         python3-5565  [003] d... 20271.187346: hrtimer_start: hrtimer=00000000a46154be function=hrtimer_wakeup expires=20271308677180 softexpires=20271308627180 mode=ABS
+         python3-5565  [003] d... 20271.187355: sched_switch: prev_comm=python3 prev_pid=5565 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.187364: hrtimer_start: hrtimer=00000000bafe098a function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=0xa
+          <idle>-0     [003] d... 20271.187366: cpu_idle: state=5 cpu_id=3
+         python3-5578  [001] d... 20271.187450: hrtimer_start: hrtimer=0000000064b2ef01 function=hrtimer_wakeup expires=1606468934412747000 softexpires=1606468934412697000 mode=ABS
+         python3-5578  [001] d... 20271.187458: sched_switch: prev_comm=python3 prev_pid=5578 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0     [001] d... 20271.187464: cpu_idle: state=5 cpu_id=1
+          <idle>-0     [000] d... 20271.189016: cpu_idle: state=4294967295 cpu_id=0
+          <idle>-0     [000] d.h. 20271.189033: hrtimer_expire_entry: hrtimer=00000000b54fa38f function=hrtimer_wakeup now=20271300315919
+          <idle>-0     [000] dNh. 20271.189041: sched_wakeup: comm=gnome-terminal- pid=1771 prio=120 target_cpu=000
+          <idle>-0     [000] dNh. 20271.189042: hrtimer_expire_exit: hrtimer=00000000b54fa38f
+          <idle>-0     [000] dN.. 20271.189047: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271301059143 softexpires=20271301059143 mode=0xa
+          <idle>-0     [000] d... 20271.189051: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gnome-terminal- next_pid=1771 next_prio=120
+ gnome-terminal--1771  [000] d.h. 20271.189779: hrtimer_expire_entry: hrtimer=0000000095731cd4 function=tick_sched_timer now=20271301061394
+ gnome-terminal--1771  [000] d.h. 20271.189781: softirq_raise: vec=1 [action=TIMER]
+ gnome-terminal--1771  [000] d.h. 20271.189782: softirq_raise: vec=9 [action=RCU]
+ gnome-terminal--1771  [000] d.h. 20271.189787: softirq_raise: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] d.h. 20271.189790: hrtimer_expire_exit: hrtimer=0000000095731cd4
+ gnome-terminal--1771  [000] d.h. 20271.189790: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=ABS
+ gnome-terminal--1771  [000] ..s. 20271.189792: softirq_entry: vec=1 [action=TIMER]
+ gnome-terminal--1771  [000] ..s. 20271.189794: softirq_exit: vec=1 [action=TIMER]
+ gnome-terminal--1771  [000] ..s. 20271.189794: softirq_entry: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] ..s. 20271.189800: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [001] d... 20271.189800: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [002] d... 20271.189800: cpu_idle: state=4294967295 cpu_id=2
+ gnome-terminal--1771  [000] ..s. 20271.189801: softirq_entry: vec=9 [action=RCU]
+ gnome-terminal--1771  [000] ..s. 20271.189802: softirq_exit: vec=9 [action=RCU]
+          <idle>-0     [001] d.h. 20271.189805: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.189806: hrtimer_expire_entry: hrtimer=00000000c46d25ae function=tick_sched_timer now=20271301089334
+          <idle>-0     [001] d.H. 20271.189808: hrtimer_expire_entry: hrtimer=00000000197f79c3 function=tick_sched_timer now=20271301091535
+          <idle>-0     [002] d.h. 20271.189809: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [001] d.H. 20271.189810: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [002] d.h. 20271.189810: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [001] d.H. 20271.189811: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [002] d.h. 20271.189812: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [002] d.h. 20271.189813: hrtimer_expire_exit: hrtimer=00000000c46d25ae
+          <idle>-0     [001] d.H. 20271.189813: hrtimer_expire_exit: hrtimer=00000000197f79c3
+          <idle>-0     [002] d.h. 20271.189814: hrtimer_start: hrtimer=00000000c46d25ae function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=ABS
+          <idle>-0     [001] d.H. 20271.189814: hrtimer_start: hrtimer=00000000197f79c3 function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=ABS
+          <idle>-0     [002] ..s. 20271.189816: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [001] ..s. 20271.189817: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [002] ..s. 20271.189817: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [002] ..s. 20271.189818: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [002] d.s. 20271.189822: cpu_frequency: state=900000 cpu_id=2
+          <idle>-0     [002] d.s. 20271.189823: pstate_sample: core_busy=33 scaled=5 from=9 to=9 mperf=3222992 aperf=1087251 tsc=55863144 freq=1178079 io_boost=0
+          <idle>-0     [002] ..s. 20271.189828: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [001] d.s. 20271.189829: cpu_frequency: state=900000 cpu_id=1
+          <idle>-0     [002] ..s. 20271.189829: softirq_entry: vec=9 [action=RCU]
+          <idle>-0     [001] d.s. 20271.189829: pstate_sample: core_busy=33 scaled=11 from=9 to=9 mperf=5034889 aperf=1674410 tsc=41922685 freq=1161240 io_boost=0
+          <idle>-0     [002] ..s. 20271.189830: softirq_exit: vec=9 [action=RCU]
+          <idle>-0     [001] ..s. 20271.189832: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [002] d... 20271.189835: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [001] dNs. 20271.189837: sched_wakeup: comm=ksoftirqd/1 pid=18 prio=120 target_cpu=001
+          <idle>-0     [001] d... 20271.189842: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=ksoftirqd/1 next_pid=18 next_prio=120
+     ksoftirqd/1-18    [001] ..s. 20271.189845: softirq_entry: vec=1 [action=TIMER]
+     ksoftirqd/1-18    [001] ..s. 20271.189846: softirq_exit: vec=1 [action=TIMER]
+     ksoftirqd/1-18    [001] ..s. 20271.189846: softirq_entry: vec=9 [action=RCU]
+     ksoftirqd/1-18    [001] ..s. 20271.189849: softirq_exit: vec=9 [action=RCU]
+     ksoftirqd/1-18    [001] d... 20271.189854: sched_switch: prev_comm=ksoftirqd/1 prev_pid=18 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0     [001] d... 20271.189858: cpu_idle: state=5 cpu_id=1
+ gnome-terminal--1771  [000] d... 20271.190194: sched_wakeup: comm=Xorg pid=1297 prio=120 target_cpu=002
+ gnome-terminal--1771  [000] d... 20271.190208: sched_switch: prev_comm=gnome-terminal- prev_pid=1771 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+          <idle>-0     [002] dN.. 20271.190216: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [000] d... 20271.190217: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271657059143 softexpires=20271657059143 mode=0xa
+          <idle>-0     [000] d... 20271.190218: cpu_idle: state=5 cpu_id=0
+          <idle>-0     [002] d... 20271.190224: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=Xorg next_pid=1297 next_prio=120
+            Xorg-1297  [002] d... 20271.190242: hrtimer_start: hrtimer=000000001b3cd485 function=it_real_fn expires=20271306525496 softexpires=20271306525496 mode=REL
+            Xorg-1297  [002] d... 20271.190277: sched_wakeup: comm=gnome-terminal- pid=1771 prio=120 target_cpu=000
+            Xorg-1297  [002] d... 20271.190297: hrtimer_start: hrtimer=00000000352b9e4d function=hrtimer_wakeup expires=20271646924804 softexpires=20271646579805 mode=ABS
+          <idle>-0     [000] dN.. 20271.190299: cpu_idle: state=4294967295 cpu_id=0
+            Xorg-1297  [002] d... 20271.190304: sched_switch: prev_comm=Xorg prev_pid=1297 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [000] dN.. 20271.190304: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=0xa
+          <idle>-0     [002] d... 20271.190309: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [000] d... 20271.190309: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gnome-terminal- next_pid=1771 next_prio=120
+ gnome-terminal--1771  [000] d... 20271.190463: sched_wakeup: comm=gdbus pid=1773 prio=120 target_cpu=002
+          <idle>-0     [002] dN.. 20271.190484: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [002] d... 20271.190492: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gdbus next_pid=1773 next_prio=120
+           gdbus-1773  [002] d... 20271.190547: sched_wakeup: comm=gdbus pid=1479 prio=120 target_cpu=001
+          <idle>-0     [001] dN.. 20271.190569: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [001] d... 20271.190576: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gdbus next_pid=1479 next_prio=120
+           gdbus-1773  [002] d... 20271.190600: sched_switch: prev_comm=gdbus prev_pid=1773 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.190606: cpu_idle: state=5 cpu_id=2
+           gdbus-1479  [001] d... 20271.190774: sched_wakeup: comm=ibus-daemon pid=1477 prio=120 target_cpu=002
+          <idle>-0     [002] dN.. 20271.190795: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [002] d... 20271.190802: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=ibus-daemon next_pid=1477 next_prio=120
+           gdbus-1479  [001] d... 20271.190855: sched_switch: prev_comm=gdbus prev_pid=1479 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0     [001] d... 20271.190861: cpu_idle: state=5 cpu_id=1
+     ibus-daemon-1477  [002] d... 20271.190984: sched_wakeup: comm=gdbus pid=1479 prio=120 target_cpu=001
+          <idle>-0     [001] dN.. 20271.191006: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [001] d... 20271.191013: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gdbus next_pid=1479 next_prio=120
+     ibus-daemon-1477  [002] d... 20271.191079: sched_switch: prev_comm=ibus-daemon prev_pid=1477 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.191086: cpu_idle: state=5 cpu_id=2
+          <idle>-0     [002] dN.. 20271.191088: cpu_idle: state=4294967295 cpu_id=2
+           gdbus-1479  [001] d... 20271.191089: sched_wakeup: comm=ibus-daemon pid=1477 prio=120 target_cpu=002
+          <idle>-0     [002] d... 20271.191091: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=ibus-daemon next_pid=1477 next_prio=120
+     ibus-daemon-1477  [002] d... 20271.191144: sched_switch: prev_comm=ibus-daemon prev_pid=1477 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.191147: cpu_idle: state=5 cpu_id=2
+           gdbus-1479  [001] d... 20271.191172: sched_wakeup: comm=gdbus pid=1704 prio=120 target_cpu=002
+          <idle>-0     [002] dN.. 20271.191199: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [002] d... 20271.191205: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gdbus next_pid=1704 next_prio=120
+           gdbus-1479  [001] d... 20271.191216: sched_wakeup: comm=ibus-daemon pid=1477 prio=120 target_cpu=003
+          <idle>-0     [003] dN.. 20271.191239: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] dN.. 20271.191244: hrtimer_start: hrtimer=00000000bafe098a function=tick_sched_timer expires=20271305059143 softexpires=20271305059143 mode=0xa
+          <idle>-0     [003] d... 20271.191249: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=ibus-daemon next_pid=1477 next_prio=120
+           gdbus-1479  [001] d... 20271.191275: sched_wakeup: comm=gdbus pid=1441 prio=120 target_cpu=001
+     ibus-daemon-1477  [003] d... 20271.191326: sched_switch: prev_comm=ibus-daemon prev_pid=1477 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+           gdbus-1479  [001] d... 20271.191332: sched_switch: prev_comm=gdbus prev_pid=1479 prev_prio=120 prev_state=S ==> next_comm=gdbus next_pid=1441 next_prio=120
+          <idle>-0     [003] d... 20271.191333: cpu_idle: state=5 cpu_id=3
+           gdbus-1704  [002] d... 20271.191401: sched_wakeup: comm=ibus-engine-sim pid=1702 prio=120 target_cpu=003
+          <idle>-0     [003] dN.. 20271.191423: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] d... 20271.191430: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=ibus-engine-sim next_pid=1702 next_prio=120
+           gdbus-1704  [002] d... 20271.191453: sched_switch: prev_comm=gdbus prev_pid=1704 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.191460: cpu_idle: state=5 cpu_id=2
+ ibus-engine-sim-1702  [003] d... 20271.191497: sched_switch: prev_comm=ibus-engine-sim prev_pid=1702 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.191504: cpu_idle: state=5 cpu_id=3
+           gdbus-1441  [001] d... 20271.191539: sched_wakeup: comm=gnome-shell pid=1437 prio=120 target_cpu=002
+          <idle>-0     [002] dN.. 20271.191561: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [002] d... 20271.191568: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=gnome-shell next_pid=1437 next_prio=120
+           gdbus-1441  [001] d... 20271.191584: sched_switch: prev_comm=gdbus prev_pid=1441 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+          <idle>-0     [001] d... 20271.191591: cpu_idle: state=5 cpu_id=1
+          <idle>-0     [001] d... 20271.191819: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [001] d.h. 20271.191825: irq_handler_entry: irq=32 name=nvkm
+          <idle>-0     [001] d.h. 20271.191841: irq_handler_exit: irq=32 ret=handled
+          <idle>-0     [001] d... 20271.191847: cpu_idle: state=5 cpu_id=1
+     gnome-shell-1437  [002] d... 20271.192353: hrtimer_start: hrtimer=000000005083dd84 function=hrtimer_wakeup expires=20271306674236 softexpires=20271306624236 mode=ABS
+     gnome-shell-1437  [002] d... 20271.192363: sched_switch: prev_comm=gnome-shell prev_pid=1437 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+          <idle>-0     [002] d... 20271.192370: cpu_idle: state=5 cpu_id=2
+ gnome-terminal--1771  [000] d... 20271.193095: sched_wakeup: comm=Xorg pid=1297 prio=120 target_cpu=002
+          <idle>-0     [002] dN.. 20271.193117: cpu_idle: state=4294967295 cpu_id=2
+          <idle>-0     [002] d... 20271.193124: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=Xorg next_pid=1297 next_prio=120
+            Xorg-1297  [002] d... 20271.193139: hrtimer_start: hrtimer=000000001b3cd485 function=it_real_fn expires=20271309422978 softexpires=20271309422978 mode=REL
+            Xorg-1297  [002] d... 20271.193433: sched_wakeup: comm=kworker/2:0 pid=7943 prio=120 target_cpu=002
+          <idle>-0     [003] d... 20271.193597: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] d.h. 20271.193602: hrtimer_expire_entry: hrtimer=0000000082fb48db function=hrtimer_wakeup now=1606468934118851744
+          <idle>-0     [003] dNh. 20271.193612: sched_wakeup: comm=python3 pid=5572 prio=120 target_cpu=003
+          <idle>-0     [003] dNh. 20271.193613: hrtimer_expire_exit: hrtimer=0000000082fb48db
+          <idle>-0     [003] d... 20271.193619: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=python3 next_pid=5572 next_prio=120
+         python3-5572  [003] d... 20271.193692: hrtimer_start: hrtimer=0000000082fb48db function=hrtimer_wakeup expires=1606468934218987000 softexpires=1606468934218937000 mode=ABS
+         python3-5572  [003] d... 20271.193708: sched_switch: prev_comm=python3 prev_pid=5572 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+          <idle>-0     [003] d... 20271.193715: cpu_idle: state=2 cpu_id=3
+          <idle>-0     [003] d... 20271.193776: cpu_idle: state=4294967295 cpu_id=3
+          <idle>-0     [003] d.h. 20271.193778: hrtimer_expire_entry: hrtimer=00000000bafe098a function=tick_sched_timer now=20271305061949
+            Xorg-1297  [002] d.h. 20271.193779: hrtimer_expire_entry: hrtimer=00000000c46d25ae function=tick_sched_timer now=20271305061373
+ gnome-terminal--1771  [000] d.h. 20271.193779: hrtimer_expire_entry: hrtimer=0000000095731cd4 function=tick_sched_timer now=20271305061676
+          <idle>-0     [003] d.h. 20271.193779: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [003] d.h. 20271.193780: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [003] d.h. 20271.193781: softirq_raise: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] d.h. 20271.193782: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [003] d.h. 20271.193782: hrtimer_expire_exit: hrtimer=00000000bafe098a
+          <idle>-0     [003] d.h. 20271.193783: hrtimer_start: hrtimer=00000000bafe098a function=tick_sched_timer expires=20271309059143 softexpires=20271309059143 mode=ABS
+ gnome-terminal--1771  [000] d.h. 20271.193783: softirq_raise: vec=9 [action=RCU]
+            Xorg-1297  [002] d.h. 20271.193784: softirq_raise: vec=1 [action=TIMER]
+            Xorg-1297  [002] d.h. 20271.193784: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [003] ..s. 20271.193785: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [003] ..s. 20271.193786: timer_expire_entry: timer=000000008bab86c3 function=process_timeout now=4299960096 baseclk=4299960096
+ gnome-terminal--1771  [000] d.h. 20271.193788: cpu_frequency: state=1600000 cpu_id=0
+          <idle>-0     [003] dNs. 20271.193789: sched_wakeup: comm=rcu_sched pid=11 prio=120 target_cpu=003
+            Xorg-1297  [002] d.h. 20271.193789: softirq_raise: vec=7 [action=SCHED]
+          <idle>-0     [003] .Ns. 20271.193790: timer_expire_exit: timer=000000008bab86c3
+ gnome-terminal--1771  [000] d.h. 20271.193791: pstate_sample: core_busy=28 scaled=33 from=10 to=16 mperf=16434705 aperf=4696881 tsc=48290712 freq=997967 io_boost=0
+          <idle>-0     [003] .Ns. 20271.193791: softirq_exit: vec=1 [action=TIMER]
+          <idle>-0     [003] .Ns. 20271.193791: softirq_entry: vec=7 [action=SCHED]
+            Xorg-1297  [002] d.h. 20271.193792: hrtimer_expire_exit: hrtimer=00000000c46d25ae
+ gnome-terminal--1771  [000] d.h. 20271.193792: softirq_raise: vec=7 [action=SCHED]
+            Xorg-1297  [002] d.h. 20271.193792: hrtimer_start: hrtimer=00000000c46d25ae function=tick_sched_timer expires=20271309059143 softexpires=20271309059143 mode=ABS
+ gnome-terminal--1771  [000] d.h. 20271.193793: hrtimer_expire_exit: hrtimer=0000000095731cd4
+ gnome-terminal--1771  [000] d.h. 20271.193794: hrtimer_start: hrtimer=0000000095731cd4 function=tick_sched_timer expires=20271309059143 softexpires=20271309059143 mode=ABS
+            Xorg-1297  [002] ..s. 20271.193795: softirq_entry: vec=1 [action=TIMER]
+            Xorg-1297  [002] ..s. 20271.193807: softirq_exit: vec=1 [action=TIMER]
+            Xorg-1297  [002] ..s. 20271.193807: softirq_entry: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] ..s. 20271.193807: softirq_entry: vec=1 [action=TIMER]
+          <idle>-0     [003] .Ns. 20271.193807: softirq_exit: vec=7 [action=SCHED]
+          <idle>-0     [003] .Ns. 20271.193808: softirq_entry: vec=9 [action=RCU]
+ gnome-terminal--1771  [000] ..s. 20271.193808: softirq_exit: vec=1 [action=TIMER]
+ gnome-terminal--1771  [000] ..s. 20271.193808: softirq_entry: vec=7 [action=SCHED]
+          <idle>-0     [003] .Ns. 20271.193808: softirq_exit: vec=9 [action=RCU]
+          <idle>-0     [001] d... 20271.193809: cpu_idle: state=4294967295 cpu_id=1
+          <idle>-0     [003] d... 20271.193810: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=rcu_sched next_pid=11 next_prio=120
+            Xorg-1297  [002] ..s. 20271.193811: softirq_exit: vec=7 [action=SCHED]
+            Xorg-1297  [002] ..s. 20271.193811: softirq_entry: vec=9 [action=RCU]
+          <idle>-0     [001] d.h. 20271.193811: softirq_raise: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] ..s. 20271.193812: softirq_exit: vec=7 [action=SCHED]
+ gnome-terminal--1771  [000] ..s. 20271.193812: softirq_entry: vec=9 [action=RCU]
+       rcu_sched-11    [003] .... 20271.193812: timer_init: timer=000000008bab86c3
+            Xorg-1297  [002] ..s. 20271.193813: softirq_exit: vec=9 [action=RCU]
+ gnome-terminal--1771  [000] ..s. 20271.193813: softirq_exit: vec=9 [action=RCU]
+       rcu_sched-11    [003] d... 20271.193813: timer_start: timer=000000008bab86c3 function=process_timeout expires=4299960097 [timeout=1] cpu=3 idx=34 flags=
+          <idle>-0     [001] d.H. 20271.193813: hrtimer_expire_entry: hrtimer=00000000197f79c3 function=tick_sched_timer now=20271305096821
+          <idle>-0     [001] d.H. 20271.193814: softirq_raise: vec=1 [action=TIMER]
+          <idle>-0     [001] d.H. 20271.193815: softirq_raise: vec=9 [action=RCU]
+          <idle>-0     [001] d.H. 20271.193816: softirq_raise: vec=7 [action=SCHED]

@@ -1,0 +1,229 @@
+
+Chaco CHANGELOG
+===============
+
+Release 4.8.0
+-------------
+
+New features/Improvements
+
+* Refactor DataPrinter to add _build_text_from_event method (PR #450)
+* Simplify controlling text of ImageInspectorOverlay (PR #431)
+* 2D segment and text scatter plot types (PR #407)
+* Set up Windows testing under AppVeyor (PR #445)
+* Add option for aligning label in index direction in TextPlot1D (PR #430)
+
+Fixes
+
+* Fix a test that fails with NumPy 1.16.x (PR #471)
+* Fix missing imports of SegmentPlot and TextPlot (PR #470)
+* Fix circular imports in toolbar_plot, transform_color_mapper (PR #469)
+* Fix deprecated logger.warn uses (PR #458)
+* Fix DataBox resizing bug (PR #456)
+* Do not render quiver if there is no point (PR #424)
+* Use single comma-separated trait names in on_trait_change, not multiple
+  arguments (PR #397)
+
+Documentation/examples
+
+* Add documentation for some tools (PR #451)
+* Remove erroneous `label_rotation` comment (PR #447)
+* Add scatter inspector example (PR #434)
+* Fix float indices in Spectrum demo (PR #427)
+* Fix world_map demo (PR #423)
+* Fix up create_plot_snapshots script (PR #421)
+* Docstring for ArrayPlotData.{set_data,update_data} (PR #399)
+
+Maintenance
+
+* Fix test that fails with Numpy 1.16 (PR #471)
+* Update Travis CI configuration to be compatible with Ubuntu Xenial (PR #452)
+* Update unittest imports (PR #446)
+* Address DeprecationWarnings (PR #441)
+* Use unittest-style tests (PR #440)
+* Run testsuite on macOS and Python 3.6 (PR #442)
+* Use standard Sphinx extensions for trait documenting (PR #436)
+* Update Cython generated code to support Python 3.7 (PR #433)
+* Skip DataFramePlotData tests if Pandas not installed (PR #422)
+
+Release 4.7.2
+-------------
+
+Fixes
+
+* Ensure contiguous inputs to points_in_polygon (#409 & #410)
+* Handle multiple plots in LegendHighlighter (#403)
+* Alias six.moves as sm (#401)
+* Respect visibility in the LegendHighlighter (#402)
+* Fix use of itertools.chain() (#394)
+
+Release 4.7.1
+-------------
+
+New features/Improvements
+
+* Add a inspector_event attribute to ScatterInspector to get 
+  notifications when both (un)hovering or (de)selecting (PR#395).
+
+Fixes
+
+* Avoid datetime issue on Windows 10 (PR#387)
+* Fix doc build (PR#384)
+* Upcast to int_ instead of int64 to avoid bincount issue (PR#383)
+
+Release 4.7.0
+-------------
+
+New features/Improvements
+
+* Add DataFramePlotData class (PR#367).
+* Allow user control over axis title angle (PR#363).
+
+Fixes
+
+* Update raise statement to be Python 3 compatible (PR#360).
+* Fix missing color bar when direction is flipped (PR#341).
+
+Maintenance
+
+* Support Python 3 without 2to3 (PR#369).
+* Update BarPlot documentation (PR#362).
+* Use EDM for CI testing (PR#365).
+* Address warnings coming from recent versions of Numpy (PR#350).
+
+
+Release 4.6.1
+-------------
+
+Fixes
+
+ * Copy over HOME value to git environment (PR#342).
+ * Fix issue with setup.py that prevent correct versioning on non-git checkouts
+   (PR#337).
+
+
+Release 4.6.0
+-------------
+
+New features/Improvements
+
+ * Fixes and improvements to contour plots: now can use non-uniformly sampled
+   grids and have masked regions (PR#326).
+ * Added MinorPlotAxis (PR#288).
+ * Improved gather points for line plots (PR#318).
+ * Added line plot downsampling via Largest Triangle Three Buckets
+   algorithm (PR#317).
+ * Added Dash/Zeal docset generation (PR#194).
+ * Python 3 support (PR#301).
+ * Use set_bounds for Zoom to reduce number of events fired (PR#233).
+ * Added more color maps and a DiscreteColorMap class (PR#275).
+ * A new base "1D plot" class introduced for handling one-dimensional plots,
+   including refactoring the existing Jitterplot and adding 1D scatterplot
+   variants that render markers, lines or text (PR#209).
+ * Replaced chaco.base.bin_search by numpy.searchsorted-based routine for
+   5x speedup and remove use of zip in chaco.base.arg_find_runs in favour of
+   column_stack for 10x speedup in bad cases (PR#263).
+ * `ImagePlot` refactored to clarify transformation applied to images and allow
+   easier reuse of transformations in subclasses (PR#147).
+
+Fixes
+
+ * Fixed issues with contour plots on Python 3.5 (PR#329 and PR#332).
+ * Fixed issue with diff of boolean arrays on newer NumPy versions (PR#329).
+ * Fixed occasional IOError crashes in spectrum demo (PR#323).
+ * Fixed issue with range zoom selection being non-transparent (PR#309).
+ * Fixed lasso selection for newer NumPy (PR#307).
+ * Fixed timescale tests and calendar timescales (PR#298).
+ * Fixed selection alpha for line scatterplot (PR#287).
+ * Fixed undefined variable error in DataLabel (PR#282).
+ * Fixed sign inversion bug in Base1DMapper (PR#222).
+ * Fixed default position attribute in BetterZoom tool (PR#241).
+ * Workaround RuntimeWarnings from nanmin and nanmax in ImageData.get_bounds
+   (PR #242).
+
+Maintenance
+
+ * Updated install instructions and quick start guide (PR#292).
+ * Removed special casing of powers of 2 in tick generation (PR#314).
+ * Added code coverage notification via codecov (PR#297).
+ * Fixed broken documentation URLs (PR#270).
+ * Use containers for Travis CI (PR#276).
+ * Automatic PEP386-compliant version numbering (PR#269).
+ * More comprehensive testing for AbstractDataSource subclasses. That
+   includes ArrayDataSource, FunctionDataSource, GridDataSource, ImageData,
+   MultiArrayDataSource (PR#244).
+
+
+What's new in Chaco 4.5.0
+-------------------------
+
+Change summary since 4.4.1
+
+New features/Improvements
+
+ * Added perceptual colormaps by Matteo Niccoli, Dave Green and Kenneth Moreland.
+ * Added `asynchronous_updates.py` demo that shows a pattern for generating
+   expensive plots while keeping the interface responsive (PR#170).
+ * Speeded up by 10x the data mappers of the `GridMapper` class (mapping of 2D data
+   to/from screen space).
+
+
+Fixes
+
+ * Restored fast renderers for scatterplots that were unintentionally removed in
+   PR#101 (PR#175).
+ * Make the `alpha` attribute of scatter plots work as intended (PR#164).
+ * Resume running test for empty container that has been skipped (PR#190).
+ * Improved handling of missing or empty data in scatterplot (PR#210)
+ * Avoid a NumPy crash when using a data source of a unicode array (PR#213).
+ * PanTool with `restrict_to_data` selected works with empty data sources
+   (PR#215).
+ * RangeSelection properly clips bounds when leaving selection area (PR#217).
+ * Fix white gap between image border and image (PR#219).
+ * Fix redraw color mapped image plot when color mapper updates (PR#221)
+ * Fix behaviour of mappers when stretch_data trait is False (PR#227)
+ * ColormappedScatterplot now redraws when colour map’s updated event fires (PR#230)
+ * Speed improvements for scatter plots with lots of points (PR#234)
+
+
+Maintenance
+
+ * Added unit tests for ColormappedScatterplot (PR#231).
+
+
+Release 4.4.1
+-------------
+This release contains a lot of enhancements and bug fixes mostly to the OOP API of Chaco but also its shell mode.
+
+
+Change summary since 4.3.0
+
+New features
+
+ * Improved ArrayPlotData to support changing multiple arrays without triggering a re-plot after each update. This
+   prevents the plot from being temporarily out of synch, which is important if the index and the values are both
+   changed to new values with different shapes (PR#124).
+ * Added control of the maximum width of a tick label. Provided that hook to the TextBoxOverlay (PR#128).
+ * Added control to generate fixed aspect ratio grid mappers (PR#129). This allows various 2D plots to control the
+   shape of the pixels in an image.
+
+Enhancements
+
+ * Improved the display of multi-word titles (PR#148).
+ * Minor improvements to the documentation (PR#134, PR#118).
+ * Made the cmap_image_plot caching more efficient and faster in large data situations (PR#123).
+ * Improved support for exporting to multipage PDF (PR#109) and drawing in landscape orientation (PR#115).
+ * Added control over whether a border for an overlay should be drawn (PR#116).
+ * Made LineSegmentTool work with BasePlot2D (PR#121).
+ * TextBoxOverlay now exposes the text color as a top level trait (PR#120).
+ * Added Travis-CI support for python 2.6 and 2.7 (PR#136, PR#145, PR#146). Github now displays the status inside
+   each Pull Requests as well as in the README.rst on the project github landing page.
+
+Fixes
+
+ * Fixed clipping issue when exporting plot to SVG (PR#111) and PDF (PR#109).
+ * Fixed export to png, bmp, jpg formats in the shell mode (PR#149).
+ * Removed unexpected zoom when panning if the pan tool has restrict_to_data set to True and the plot has nonlinear
+   axes (PR#150).
+ * Fixed a few of failing unit tests (PR#143).
+ * Fix sort_order bug (PR#141, issue#119).

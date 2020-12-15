@@ -1,0 +1,64 @@
+The icons are mostly derived work from other icons. As such they are
+licensed accordingly to the original license:
+
+Project                 License                   File
+----------------------------------------------------------------------------
+Crystal Project         LGPL                      image_LICENSE_CP.txt
+Eclipse                 Eclipse Public License    image_LICENSE_Eclipse.txt
+Enthought               BSD 3-Clause              LICENSE.txt
+GV (Gael Varoquaux)     Public Domain             N/A
+NASA                    Public Domain             N/A
+Nuvola                  LGPL                      image_LICENSE_Nuvola.txt
+OOo                     LGPL                      image_LICENSE_OOo.txt
+Rick Marin              Public Domain             N/A
+US Government           Public Domain             N/A
+
+Unless stated in this file, icons are the work of Enthought, and are
+released under a 3 clause BSD license.
+
+Files and original authors:
+----------------------------------------------------------------------------
+enable/images:
+                       0_weight.gif | Enthought
+                       1_weight.gif | Enthought
+                       2_weight.gif | Enthought
+                       3_weight.gif | Enthought
+                       4_weight.gif | Enthought
+                       5_weight.gif | Enthought
+                       6_weight.gif | Enthought
+                       7_weight.gif | Enthought
+                       8_weight.gif | Enthought
+         bottom_center_position.gif | Enthought
+           bottom_left_position.gif | Enthought
+          bottom_right_position.gif | Enthought
+                   center_align.gif | Enthought
+           center_left_position.gif | Enthought
+                center_position.gif | Enthought
+          center_right_position.gif | Enthought
+                     left_align.gif | Enthought
+                    right_align.gif | Enthought
+            top_center_position.gif | Enthought
+              top_left_position.gif | Enthought
+             top_right_position.gif | Enthought
+
+enable/image/images:
+                      colorchip.png | Enthought
+                          image.png | Enthought
+                      inspector.png | Crystal Project
+
+enable/savage/traits/ui/wx/data:
+                  button_toggle.svg | Enthought
+
+examples/enable:
+                      deepfield.jpg | NASA
+examples/savage:
+                      edit-copy.svg | Oxygen, CC 3.0 and GPL
+                     edit-paste.svg | Oxygen, CC 3.0 and GPL
+
+examples/kiva/agg/examples:
+                      serengeti.jpg | Rick Marin
+                        finger1.gif | US Government
+                        finger2.gif | US Government
+
+integrationtests/kiva/agg:
+           doubleprom_soho_full.jpg | NASA

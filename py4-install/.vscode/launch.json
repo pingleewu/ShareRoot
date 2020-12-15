@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Pytimechart File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pytimechart/timechart/timechart.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/pytimechart/timechart",
+            "env": {
+                "PYTHONBREAKPOINT": "1",
+                "PytHome": "/home/pclee/Desktop/workarea/py4-install",
+                "PYTHONPATH": "${PytHome}/chaco:${PytHome}/enable:${PytHome}/etsproxy:${PytHome}/pyface:${PytHome}/traits:${PytHome}/traitsui:${PytHome}/pytimechart:${PytHome}/fonttools/Lib"
+            },
+            "justMyCode": false,
+            "args": ["${workspaceFolder}/pytimechart/timechart/trace20-11-27-01-22-20.txt.lzma"]
+        }
+    ]
+}

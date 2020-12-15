@@ -1,0 +1,546 @@
+================
+Pyface Changelog
+================
+
+Release 7.1.0
+=============
+
+Pyface 7.1.0 introduces a few new features and fixes to deprecation warnings.
+There are also internal cleanups to Qt signal connection logic that
+should be invisible to users.
+
+This release should be compatible with Traits 6.0+. Users are encouraged to
+upgrade to Traits 6.1+ to stay current as future releases of Pyface will stop
+supporting Traits 6.0.
+
+Highlights of this release
+--------------------------
+
+* A new :mod:`data_view <pyface.data_view>` subpackage has been introduced to
+  support visualization of hierarchical and non-hierarchical tabular data. See
+  :ref:`data-view` section of the user manual for an introduction. Additional
+  examples are also added to the source distribution. Please note that as of
+  this release the API is provisional.
+
+* A new :class:`Color <pyface.color.Color>` class and a corresponding
+  :class:`PyfaceColor <pyface.ui_traits.PyfaceColor>` trait type have been
+  introduced to support representing colors via a toolkit independent API. See
+  :ref:`ui-trait-types` section of the user manual for further details.
+
+Detailed changes
+----------------
+
+More than 70 PRs went into this release. Thanks to:
+
+* Aaron Ayres
+* Ieva Cernyte
+* Mark Dickinson
+* Kit Yan Choi
+* Rahul Poruri
+* Corran Webster
+
+Note that the following list is not exhaustive. Some PRs references have been
+omitted.
+
+Features
+
+* Add :mod:`data_view <pyface.data_view>` subpackage for visualizing
+  hierarchical and non-hierarchical data. (#619, #661, #682, #683, #694, #709)
+* Add :class:`Color <pyface.color.Color>` and
+  :class:`PyfaceColor <pyface.ui_traits.PyfaceColor>` trait type.
+  (#608, #710, #703)
+
+Fixes
+
+* Use availableGeometry for screen size in Qt to match TraitsUI behavior (#727)
+* Fix deprecation warnings from Qt SystemMetrics (#719)
+* Fix QFontMetrics.width deprecation warning. (#715)
+* Remove border for heading text in Qt. (#692)
+* Replacing ListItemAttr with ItemAttr to avoid deprecation warning. (#670)
+* Fix wx/linux clipboard test failures. (#676)
+
+Build and continuous integration
+
+* Add CI job targeting traits 6.0. (#656)
+* Fix extras_requires for PyQt5. (#659)
+* Updated edm version in travis and appveyor config files. (#618)
+
+Documentation
+
+* Add documentation for the new PyfaceColor trait and Color class. (#710)
+* Add documentation for DataView. (#543, #574, #763)
+* Remove all enaml examples. (#652)
+* Fix some Sphinx warnings while building documentation. (#769)
+
+Maintenance and code organization
+
+* Disconnect slots to Qt signals when cleaning up widgets. (#536, #542, #540)
+* Disconnect trait change handlers when cleaning up ApplicationWindow widgets.
+  (#541)
+* Remove conditionals on python version. (#635)
+* Remove a print call in test. (#657)
+* Remove all of the u prefix on strings. (#604)
+* Use collections.abc instead of collections. (#477)
+* Use unittest discover for running tests. (#515)
+
+
+Release 7.0.1
+=============
+
+This is a bugfix release which fixes a number of minor issues with the 7.0.0
+release.
+
+Thanks to:
+
+Aaron Ayres, Kit Choi, Rahul Poruri, Pedro Rivotti, Corran Webster.
+
+Change summary
+--------------
+
+Fixes
+
+* Fix copyright header in AboutDialog. (#573)
+* Fix dock pane layout on Qt5. (#545)
+* Fix errors from incorrect QImage memory management. (#546)
+* Fix CodeWidget handling of parsed tokens which caused TraitsUI CodeEditor to
+  fail when a different lexer was chosen (#566).
+
+Release 7.0.0
+=============
+
+Pyface 7.0.0 is a major release which focuses on modernization of the
+codebase.  This release includes updating the WxPython backend to support
+WxPython 4, an effort led by Rob McMullen's first cut at support, with
+help from a number of other people.  It also updates the code to use new
+features of Traits 6, and just like Traits 6, this release drops support
+for Python 2.
+
+The release includes many bugfixes and a number of smaller incremental
+enhancements.  Other than the changed dependencies, Pyface 6 code should
+largely work unmodified under Pyface 7.
+
+Thanks to:
+
+David Baddeley, Mark Dickinson, Matt Hancock, Petr Kungurtsev, Midhun
+Madhusoodanan, Rob McMullen, Shoeb Mohammed, Rahul Poruri, Roberto Preste,
+reckoner, Jan von Rickenbach, Chiranth Siddappa, Joris Vankerschaver,
+Corran Webster.
+
+Change summary
+--------------
+
+Enhancements
+
+* Use Traits 6 features (#480, #494)
+* WxPython 4 support (#469, #473, #497, #499)
+* Remove six and other Python 2 code (#493)
+* Add utility functions for Qt images (#498)
+* Allow live update of Action images (#484)
+* Add Qt Multimedia APIs to pyface.qt (#485)
+* Allow additional copyright notices in the AboutDialog class (#467)
+* Replace default AboutDialog and Splashscreen images with Python logo (#454)
+* Allow etstool.py to run in non EDM environments (#443)
+* Add assertEventuallyTrueInGui method to GuiTestAssistant (#419)
+
+Fixes
+
+* Avoid imports of Wx in interface classes (#500)
+* Code style cleanup (#490, #491)
+* Documentation fixes (#468)
+* SplitEditorAreaPane context menu cleanup (#435)
+* Remove deprecated Traits features (#457, #460)
+* Better Python 3 compatibility (#438, #455, #461, #477, #479)
+* Improved Qt support (#452)
+* Fix relative imports for Wx tasks (#448)
+* Ensure close button and escape key close message dialogs in Qt (#441)
+* Don't show context help button in Windows dialogs (#440)
+* Test improvements (#436)
+
+Release 6.1.2
+=============
+
+This is a bugfix release which fixes a number of minor issues with the 6.1.1 release.
+
+Thanks to:
+
+Mark Dickinson, Prabhu Ramachandran, Corran Webster.
+
+Change summary
+--------------
+
+Fixes
+
+* Don't try to open directories in PythonEditorTask (#428)
+* Regression test for split editor area merge messages (#424)
+* Fix some comments that should be Traits doc-comments. (#426)
+* Fix some occurrences of PyFace (should be Pyface) (#420)
+* Use decorator form of classmethod and staticmethod. (#417)
+* Use equality rather than is when checking orientation. (#422)
+* Fix timer issues. (#409, #414, #415)
+* Remove use of etsdevtools in an example file. (#413)
+* Fix a questionable version check. (#411)
+* Fix error during tab completion on shell. (#410)
+
+Release 6.1.1
+=============
+
+This is a bugfix release which fixes a number of minor issues with the 6.1.0 release.
+
+Thanks to:
+
+David Baddeley, Christian Brodbeck, Mark Dickinson, Rahul Poruri, Corran Webster.
+
+Change summary
+--------------
+
+Fixes
+
+* Remove use of deprecated Traits get() method (#403)
+* Fix pyqt5 webkit imports (#396)
+* Remove use of cmp in fix_introspection_bug (#395)
+* Update CI infrastructure (#394, #399)
+* Update unittest imports (#391)
+* Fix bug in argspec usage (#393)
+* Fix regression in DoLaterTimer API (#389)
+
+
+Release 6.1.0
+=============
+
+This release introduces a number of new features and bugfixes.  The most
+prominent of these is a set of Application classes designed to smooth the
+transition between Tasks applications which use only Pyface, and those that
+take advantage of the Envisage plug-in framework.  Developers can now write
+a Pyface TasksApplication and then easily transition to an Envisage
+TasksApplication as the needs of their codebase grows.  This feature has been
+a few years in development, and thanks is due to Jonathan Rocher for helping
+push this through to completion.
+
+This release also includes a complete re-write of the Pyface timer code to
+make it easier to use and to provide a consistent and more Pythonic API
+shared by the different back-ends.  A backwards compatible API is still
+available, but users of the Pyface timer code are encouraged to update to
+the new API.
+
+ToolBars can now embed simple widgets, such as text fields, integer spinners,
+and comboboxes, as well as simple TraitsUI views.  This is provided via a
+new "widget" style for Actions as well as the utility subclasses FieldAction
+and TraitsUIWidgetAction.
+
+Although not visible to most users of Pyface, this release removes the use
+of 2to3 and now uses a unified codebase supported by the six library.  Thanks
+to Rahul Poruri for performing this transformation.  This should help
+significantly with ongoing development work in the coming years.
+
+We also include experimental support for PySide2 (also called "Qt for Python").
+We are running CI tests using the 5.11 release of PySide2 with success on OS X
+and Linux for Python 3, but are experiencing failures with the 5.12 release.
+
+Finally, this release includes a number of bugfixes and minor enhancements
+which should improve the reliability and utility of the codebase.
+
+Thanks to:
+
+Martin Bergtholdt, Mark Dickinson, Robert Kern, Eric Larson, Gregory Lee,
+Eric McDonald, Rahul Poruri, Jonathan Rocher, Hamdi Sahloul, Roger Serwy,
+Brian Teague, Corran Webster, John Wiggins.
+
+Apologies to any contributors that have been omitted.
+
+Change summary
+--------------
+
+Enhancements
+
+* Application classes (#334, #355, #345)
+* New API for Timers (#340, #365)
+* Support simple widgets in toolbars (#359, #360, #368)
+* Experimental support of Pyside2 (#318, #335, #358)
+* Support single codebase for Python 2 and 3 (#322, #351, #369, #370)
+* Support ui dispatch for Traits even if TraitsUI not available (#363)
+
+Fixes
+
+* Fix context menu behaviour (#356)
+* Remove TraitsUI dependency in GuiTestAssistant (#366)
+* Fixes for ProgressDialog (#357)
+* Fixes for toolbar and statusbar life cycles (#332)
+* Fixes for CI (#342)
+* Fix usages of event_loop() in tests (#336)
+* Fix SplitEditorAreaPane tab dragging on Qt5 (#327)
+* Fix resource warnings in test suite from un-closed files (#326)
+* Remove uses of deprecated HasTraits.set() method (#320)
+* Add Qt5 support for deprecated Qt Style options that Mayavi needs (#323)
+* Various fixes around Qt API selection (#319, #344, #347, #371, #376, #381)
+* Fixes for setup.py (#380)
+
+
+Release 6.0.0
+=============
+
+This release introduces preliminary support for Qt5 via PyQt5, thanks to the
+work of Gregor Thalhammer which got the ball rolling.  Qt5 support is
+not yet robustly tested in deployed applications, so there may yet be bugs to
+find.  As part of this effort all occurences of old-style signals and slots
+have been removed; and this has greatly improved stability under Qt.
+
+In addition, thanks to the dedicated work of Rob McMullen, we now have Tasks
+support for wxPython.
+
+This release also features a great deal of work at the API level to disentangle
+the two-way dependencies between Pyface and TraitsUI.  This has involved moving
+a number of sub-packages between the two libraries, most notably the zipped
+image resource support and a number of trait definitions.  We have endeavored
+to keep backwards compatibility via stub modules in the original locations,
+but we can't guarantee that there will be no issues with third party code
+caused by the change in locations.  We haven't been able to remove all
+dependencies, but as of this release on the dock and workbench submodules have
+required dependencies on TraitsUI.
+
+Another long-desired feature was the ability to write toolkit backends for
+Pyface and TraitsUI that are not part of the main codebase.  This is now
+possible by contributing new toolkit backends to the "pyface.toolkit"
+pkg_resources entry point in a setup.py.  This work was accompanied by an
+overhaul of the toolkit discovery and loading infrastructure; in particular
+Pyface and TraitsUI now share the same code for performing these searches
+and loading the backends.
+
+Finally, the testing infrastructure has been overhauled to provide a one-stop
+location to run tests in self-contained environments using Enthought's EDM
+package management tool.  Tests can be run from any python environment with the
+"edm" command available and the "click" library installed with the "etstool.py"
+script at the top level of the repository.  In particular::
+
+    python etstool.py test_all
+
+will run all relevant tests for all available toolkits in all supported
+python versions.  The TravisCI and Appveyor continuous integration tools have
+been updated to make use of these facilities as well.
+
+Thanks to Florian Bender, Kit Choi, Mark Dickinson, Simon Jagoe, Robert Kern,
+Rob McMullen, @nprksh, Prabhu Ramachandran, Gregor Thalhammer, Senganal
+Thirunavukkarasu, Ioannis Tziakos, Joris Vankerscharver, and Corran Webster.
+Apologies to any contributors that have been omitted.
+
+Change summary
+--------------
+
+Enhancements
+
+* Tasks support for wxPython (#223, #247)
+* Qt5 Support (#170, #256, #264, #265, #268, #271, #279, #292)
+* Disentangling Pyface and TraitsUI (#221, #250)
+* EDM-based test runner (#243, #296, #298)
+* Improved toolkit selection (#259, #260, #276, #304, #305)
+* Move wxPython-specific code to pyface.wx (#261)
+* Single choice dialog for Qt toolkit (was already in wx toolkit) (#217)
+* Add 'detail' and 'informative' to window dialog helpers (#181)
+* Code coverage reporting (#214)
+* All Pyface widgets now have visible and enabled traits (#284)
+* Allow "qt" as a synonym for "qt4" (#304)
+* PythonShell widget history exposed via the API (#314)
+* Experimental PySide2 support (#303)
+
+Fixes
+
+* Documentation fixes (#220, #231)
+* Testing and CI fixes (#224, #226, #239, #248, #252, #253, #257, #267, #270,
+  #277, #278, #281, #283)
+* Fix bug updating Tasks window titles (#225)
+* Python 3 compatibility fixes (#228)
+* Remove use of cmp in the AdvancedEditorAreaPane (#237)
+* AutoPEP8 of Pyface codebase (#241)
+* Minor WxPython fixes (#230, #269, #275, #294)
+* Don't use sendPostedEvents in Qt GUI.do_trait_later (#273)
+* Fix ordering of items when appending to an ActionManager default group (#290)
+* Explicit life-cycle for Qt event filters on Widgets (#300)
+* Fixes to ensure demos and examples work (#308)
+
+Release 5.1.0
+=============
+
+Change summary since 5.0.0
+--------------------------
+
+Enhancements
+
+* Added documentation on toolkit selection (#197)
+* Clarify the purpose of LayoutContainer construction args (#189)
+* Improve ETSConfig toolkit selection (#187)
+
+Fixes
+
+* Fix restoring show_editor_area from saved perspective(#207)
+* Fix WorkbenchWindowLayout in Python 3 (#206)
+* Update SplitEditorAreaPane's active editor when focus changes under Qt (#203, #204)
+* Read-only CodeEditor should not allow adding newlines in View (#200)
+* Fix exception when closing all docks in a workbench window (#199)
+* Fix extended trait change description in qt dock pane (#194)
+* Fix Qt Workbench dock widget control in a workbench window (#192)
+* Fix double UnInit of AUI in ApplicationWindow under Wx (#184, #185)
+* Fix IPythonWidget syntax error (#178, #186)
+* Fix ProgressDialog timer labels #(183)
+* Fix Qt CodeWidget when focus goes out of a widget (#176, #177)
+* Fix Qt and Wx ProgressDialog for updating message (#176, #177)
+
+
+Release 5.0.0
+=============
+
+This release introduces preliminary support for Python 3 with the Qt toolkit!
+
+This is based in large part on the work of Yves Delley and Pradyun Gedam, but
+also owes a lot to Ioannis Tziakos for implementing container-based continuous
+integration and Prabhu Ramachandran and Corran Webster for tracking down the
+few remaining bugs.  Python 3 support is probably not yet ready for production
+use, but feedback and bug reports are welcome, and all future pull requests
+will be expected to work with Python 3.4 and later.  Python 3 support requires
+Traits 4.5 or greater, and TraitsUI 5.0 or greater.
+
+This release also bring support for wxPython 3.0, while dropping support for
+wxPython 2.6 and earlier.  There are also a couple of minor bug fixes detailed
+below.
+
+Finally, this release changes the default GUI toolkit from Wx to Qt.  This
+changes the behaviour of the library in the case where both WxPython and
+PyQt/PySide are installed and the user or code doesn't specify the toolkit to
+use explicitly.
+
+Change summary since 4.5.2
+--------------------------
+
+Features
+
+* Experimental support for Python 3 (#160, #161, #162, #163).
+* Experimental support for wxPython 3 (#168).
+
+Enhancements
+
+* Make Qt 4 the default GUI toolkit (#172).
+
+Fixes
+
+* Fix issue with reading unicode text from Qt clipboard (#159).
+* Remove usage of `logging.warn` in favour of `logger.warning` (#167).
+
+Release 4.5.2
+=============
+
+This release includes a large number of additions to the test suite that
+provide at least basic smoke-test coverage of the core of the library.  There
+has also been work done to improve the continuous integration testing of
+the library.  Much more work needs to be done on this front, but the situation
+is improving.
+
+The process of adding these tests also discovered a number of minor bugs
+which have been fixed.
+
+Finally, this release warns that as of Pyface 5.0 the default GUI toolkit
+will switch from Wx to Qt.  This future update will change the behaviour of
+the library in the case where both WxPython and PyQt/PySide are installed and
+the user or code doesn't specify the toolkit to use explicitly.
+
+Change summary since 4.5.1
+--------------------------
+
+Enhancements
+
+* Added many tests, increasing test coverage by about 10% (PR#147)
+* Add continuous integration support for Windows and Qt via Appveyor (PR #154)
+* Use Travis CI's container infrastructure (PR #153)
+
+Fixes
+
+* Stop TaskWindow layout running after window control destroyed (PR#156).
+* Fix file execution for PythonShell on Windows with Qt backend (PR#147).
+* Fix Group objects setting wrong trait when naming new Actions (PR#147).
+* Fix ActionItem change handler for `visible` trait (PR#147).
+* Fix failure to release application window from AUIManager in Wx (PR#147).
+* Fix missing import for qt4 confirmation dialog (PR#147).
+* Deprecate Wx as the default toolkit choice for Pyface (PR#150).
+* Improve error handling in toolkit imports; fix some import errors which
+  made the Qt PythonEditor unavailable; and make pygments a formal requirement
+  rather than implicit (PR#144).
+
+
+Release 4.5.1
+=============
+
+Change summary since 4.5.0
+--------------------------
+
+Fixes
+
+* fix MANIFEST.in (PR#131).
+* Fix incompatibility with Pygments 2.x, which was causing tracebacks
+  during syntax highlighting (PR#136).
+
+
+Release 4.5.0
+=============
+
+Change summary since 4.4.0
+--------------------------
+
+Enhancements
+
+* Add testing assistants (Qt) (PR#118).
+* Support menus in toolbars (Qt) (PR#104).
+* keybindings update for other editor area classes (PR#103).
+* Change advanced editor area tab switching shortcut to Ctrl+PgUp/Down (PR#99).
+* ToolBar: Listen to Action name changes for toolbar actions (PR#90).
+
+Fixes
+
+* Fix reference to attribute (PR#112).
+* Fixed wx 2.9 incompatibility bug in ProgressDialog (PR#106).
+* Qt CodeEditor pygments monkeypatch conflict with ipython (PR#100).
+* Documentation fix (PR#95).
+
+* Tooltip for first editor of SplitEditorAreaPane was broken (PR#108)
+
+
+Release 4.4.0
+=============
+
+This is a bug fix release. The biggest change in this release is support for the
+new adaptation mechanism in Traits 4.4.0.
+
+
+Change summary since 4.3.0
+--------------------------
+
+New features
+
+ * Support Enaml 0.8 (PR#92)
+
+Enhancements
+
+ * Improvements to SplitEditorAreaPane (PR#83).
+
+Fixes
+
+ * Fixed split editor area pane focus (PR#89).
+ * Fixed bug when a VSplitter contains an HSplitter (PR#88, issue#87)
+
+
+TraitsGUI 3.1.0 (July 15, 2009)
+===============================
+
+Enhancements
+------------
+
+  * Removed Theming support from DockWindows. Borders and tabs are now drawn using lines instead of stretching images.
+
+ * Changed default font to use the system font
+
+ * Moved pyface.wx.clipboard to Pyface
+
+ * Moved the grid package out of pyface and into pyface.ui.wx, left deprecated warnings
+
+
+Fixes
+-----
+
+ * Improved info shown to the user if toolkits don't work as expected
+

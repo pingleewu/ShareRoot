@@ -1,0 +1,351 @@
+Enable CHANGELOG
+================
+
+Changes since Enable 4.8.0
+==========================
+
+Enhancements
+------------
+
+Fixes
+-----
+
+Maintenance
+-----------
+
+Enable 4.8.0
+============
+
+Enhancements
+------------
+
+* PR #302: Qt5 Support
+* PR #330: Add support for ttc fonts
+* PR #345: Add more Qt mouse button names
+
+Fixes
+-----
+
+* PR #312: Ensure contiguity for memoryview arrays in points_in_polygon
+* PR #317: Fix rect drawing with celiagg
+* PR #321: Kiva PDF backend: Don't clobber a passed-in font object
+* PR #331: Prevent context menus in Enable Qt widgets.
+* PR #346: Fix TypeError when passing unicode args to agg gradient methods
+* PR #350: Don't fail when empty arrays are passed to points_in_polygon
+* PR #354: Fix typo in MANIFEST.in
+* PR #358: Fix paths to static files.
+
+Maintenance
+-----------
+
+* PR #322: Remove `sudo: false` from Travis config
+* PR #343: Fix code which triggered DeprecationWarnings
+* PR #347: Setup Appveyor
+* PR #348: Update EDM version for CI script
+* PR #349: Update `unittest` imports
+* PR #352: Quick and Dirty Documentation Improvements
+* PR #353: Update Travis CI configuration to be compatible with Ubuntu Xenial.
+* PR #356: CI failures on wx, python 2.7, win expected
+* PR #357: Remove unnecessary Ubuntu package.
+
+Enable 4.7.2
+============
+
+Fixes
+-----
+
+* PR #310: Remove locale-dependence in Agg text rendering
+* PR #309: FIX: Ensure contiguous transposed arrays
+* PR #305: Ignore X11 fonts on macOS
+* PR #299: BUG: Remove use of C API not available in Python 3
+
+Maintenance
+-----------
+
+* PR #308: Update to the most recent release of fonttools
+
+Enable 4.7.1
+============
+
+Fixes
+-----
+
+* PR #295: Use uint8_t from numpy instead of stdint
+
+Enable 4.7.0
+============
+
+This is a maintenance release, with the most significant change being an
+upgrade to the vendorized Agg code. This should resolve issues with hard
+crashes in (packages that use) Kiva.
+
+Maintenance
+-----------
+
+* PR #288: Upgrade to a newer Agg version
+* PR #287: Improve mouse wheel support
+* PR #285: Add Python 3.5, 3.6 to CI
+* PR #284, #289, #290: Support Python 3 without 2to3
+* PR #281: Use EDM for CI testing
+* PR #280: Clean up circular import in test
+
+Enable 4.6.1
+============
+
+Fixes
+-----
+
+* PR #257: Fix a problem encountered when installing from pip
+
+
+Enable 4.6.0
+============
+
+Enhancements
+------------
+
+* PR #246: Kiva explorer demo
+* PR #222: New markers: 2 triangles, star, cross-plus, 2 hexagons, and pentagon
+* PR #209: Python 3 Support
+* PR #207: Viewport resizing
+
+Fixes
+-----
+
+* PR #243: Make savage compatible with newer PyParsing versions.
+* PR #241: Fixed the trs_factor function
+* PR #238: points_in_polygon now returns a bool array
+* PR #234: allow multiple gradient stops with wx toolkit
+* PR #231: Be deterministic about initial state of viewport position and bounds
+* PRs #215 & 217: Support for Pillow 3.0
+* PR #205: Fix scrolling problem with Qt native scrollbar
+* PR #203: numpy.rank() is deprecated
+
+
+Maintenance
+-----------
+
+* PR #244: Remove support for Mac font suitcases.
+* PR #240: add quartz to MANIFEST file
+* PR #232: Don't assume window is MockWindow when dealing with pointer position
+* PR #230: Fix for build issues
+* PR #227: Create codecov.yml
+* PRs #226 & #201: Fix g++ version string parsing
+* PR #223: Fix SVG Tests
+* PR #214: Add docs and examples to the source distribution
+* PR #206: Containerize Travis CI Builds
+* PR #195: Multiple build environments
+* PR #177: fixes for recent swig
+* PR #192: Add the auto-generated enable/_version.py to .gitignore
+* PR #191: fix missing framework when building kiva.quartz.
+* PR #180: fix minor errors in sphinx build
+
+
+
+Enable 4.5.0 (March 23, 2015)
+=============================
+
+Enhancements
+------------
+
+ * PR #138: Optional constraints-based layout.
+ * PR #140: Add a base class for drag and drop tools, example and test support.
+ * PR #150: Add a very basic Image component
+ * PR #160: Basic testing for kiva backends.
+ * PR #168: Simple push-button and checkbox tool.
+ * PR #167: Add tools that support Apptools Undo/Redo.
+
+Fixes
+-----
+
+ * PR#139 Significant code clean-up, modernization, test improvement and
+   documentation for Kiva.
+ * Multiple fixes for breaks to Travis-CI builds.
+
+Enable 4.4.0 (May 1, 2014)
+==========================
+
+Enhancements
+------------
+
+ * Added a test assistant to aid in writing unit tests for Enable/Chaco code (3cb6d22 & a5b8cb9)
+ * Added Drag & Drop support for Qt (4196bc8)
+ * Added a context menu tool (0c27475)
+
+Fixes
+-----
+
+ * PR #92: Fixed the example support code to allow Chaco demos to run on Qt
+ * PR #94: Fixed the examples so that they would run on Qt
+ * PR #102: Fixed a transparency drawing bug in the Qt image backend
+ * Fixed various bugs which caused test failures in Enable and Chaco (PRs #103,
+    #105, #110, #113)
+ * PR #107: Fixed a memory leak in the QPainter kiva backend
+ * PR #116: Fixed the incomplete implementation of the resize tool
+ * PR #118: Fixed a gradient rendering bug that sometimes caused segfaults
+
+
+Enable 3.4.1 (March 3, 2011)
+============================
+
+Fixes
+-----
+
+* Removed OnPaint method from KivaRenderPanel in savage. On Windows there
+  were competing handlers for the paint event. The OnPaint method expected a
+  certain order, which varied by Platform
+* QImage constructor args were changed to use QByteArray to match changes to
+  PySide API changes in PySide RC1
+
+
+Enable 3.4.0 (Jan 26, 2011)
+===========================
+
+Enhancements
+------------
+
+* Major refactor of kiva backends to make setting the desired backend more resilient and flexible.
+* Added support for PySide
+* Qt backend no longer uses Agg internally, instead it uses QPainter.
+* Improved gradient support in Quartz backend
+* Improved cairo backend
+* Updated to use variation of rev 8713 of matplotlib font_manager.py
+
+Fixes
+-----
+* Fixed cubic spline rendering in OpenGl backend
+* Fixed gradients using relative coordinates
+* Fixed object-space gradients
+
+
+Enable 3.3.2 (October 15, 2010)
+===============================
+
+Enhancements
+------------
+
+* Context manager methods were added to the Kiva GraphicsContext class, so
+  now, instead of this common pattern for a GraphicsContext gc:
+
+      gc.save_state()
+      try:
+          # Do stuff with gc...
+      except:
+          gc.restore_state()
+
+  one can do this::
+
+      with gc:
+          # Do stuff with gc...
+
+* Stacked layout containers were added.
+* qt4_backend: Added Tony Yu's patch to better handling keypresses in Qt4 when modifier keys are pressed (r25644).
+* vtk_backend: Added John Wiggins patch which adds key bindings to EnableVTKWindow (r25796).
+* The Kiva backend for the Mac, implemented in ABCGI.pyx, is now processed with cython instead of pyrex.
+
+
+Fixes
+-----
+
+* vtk_backend: Got rid of timer that was causing performance problems on
+  the Mac by looking for the "StartEvent" on the RenderWindow to determine
+  when we are about to do a vtk render. (r25605)
+* savage:  Avoid the wx-specific FileInspector in Sike and use the
+  CodeEditor directly. (r25742)
+* Exceptions were updated to use the new Exception classes in several places.
+
+
+Enable 3.3.1 (Feb 24, 2010)
+===============================
+
+Enhancements
+------------
+
+* Added dimming mask to disabled buttons when using wx backend (r25405).
+* Added toggle_label and toggle_tooltip from Brad Buran's patch (r25414).
+* vtk_backend: Made _redraw call _paint to force an immediate draw.
+  Added a request_render callable slot that will be called instead of
+  self.control.render if set. This allows renders to be coordinated to
+  avoid duplicate renders. (r25423)
+* Added option of making center section of compass clickable by setting
+  "enable_center" to True. (r25492)
+* kiva agg backend: fixed minor issues causing compiler warnings (r25498)
+
+Fixes
+-----
+
+* Fixed hover_tool so it imports correctly under the 'null' toolkit, as
+  reported on mailing list (r25407).
+
+
+Enable 3.3.0 (Feb 24, 2010)
+===========================
+
+Enhancements
+------------
+
+ * Updated freetype to 2.3.12.  This makes our text look prettier, and also fixes some compatibility issues with OS X 10.6.
+ * Moved Shape from examples into enable.primitives
+ * Improved ability to find the Qt SVG IconEngine for the SVGButtonEditor
+ * Improved painting in Wx by as much as 30%
+ * Added repeat and reflect gradient fill methods
+
+Fixes
+-----
+
+ * Fixed diamond marker to use the native Agg marker
+ * Fixed drawing elliptical curves on OS X
+ * Fixed scaling transforms affecting gradients
+ * Fixed the "window" property on Enable components to recurse up their container hierarchy to return the default window associated with a component.
+ * Viewports now correctly implement is_in() and components_at(), taking their own boundaries into account.
+ * Removed explicit dependency on TraitsBackendWx in Enable
+ * Fixing logic in enable.example_support, so that it no longer just uses wx if wxPython is installed, but rather looks at ETSConfig.toolkit.
+ * Fixing some math in the computation of setting outer_x2 and outer_y2 attributes of components.
+
+One final note is that the "enable2" legacy backwards compatibility package will
+be removed by the next release.  If you have any code that imports from
+"enable2" and the DeprecationWarnings haven't been sufficiently
+motivating thus far, please heed them and change your imports to use
+"enable"!
+
+
+Enable 3.2.0 (July 15th, 2009)
+==============================
+
+enable Enhancements
+-----------------------------
+
+ * Added Slider and Compass widgets
+ * Added an OverlayContainer (almost identical to the one in Chaco)
+ * Added ImageGraphicsContextEnable class so that one can always import a Kiva Image backend-based GraphicsContextEnable
+ * renaming marker_trait to MarkerTrait (the old name is still permitted forbackwards compatibility, but should be avoided)
+ * Moved the scatter_markers module from Chaco to Enable, so that Enable components can use MarkerTrait
+ * Added an experimental VTK backend for Enable, along with an example
+ * Changed SVGButtonEditor toggle to draw a SVG under the button SVG instead of drawing a plain box
+ * Added labels for SVGButton
+ * Improving backbuffering performance on the Mac by creating the layer context from the window context instead of from a bitmap.
+ * Adding a "fixed_preferred_size" trait to Components, so that relative size preferences can be expressed amongst different components in a container
+
+
+enable Fixes
+----------------------
+
+ * Improved the backend selection to match the Traits UI backend unless ETSConfig.enable_toolkit is explicitly set
+ * Fixed demo_main() in example_support.py so that it doesn't crash IPython
+ * Fixed RGBAColorTrait so it can be used with the null toolkit
+ * Changed the "sys_window" color to be the same as the Traits UI "WindowColor" constant
+ * Fixed backend_cairo's get_text_extent() implementation to match other backends
+
+
+kiva Enhancements
+---------------------------
+
+ * Added basic gradients to Kiva
+
+kiva Fixes
+--------------------
+
+ * Fixed Python 2.6 datatype errors
+ * Fixed memory leak as reported in ticket 1815
+ * The macport test is only run on Darwin systems
+ * Removed deprecated calls to old numpy APIs
